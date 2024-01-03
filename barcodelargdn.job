@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --partition=largemem
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=60
+#SBATCH --time=7-00:00:00
+#SBATCH --mem=0
+
+
+module load gcc/8.3.0
+module load python
+
+python3 barcodecreat+universal.py
